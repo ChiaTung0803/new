@@ -84,16 +84,3 @@ ul li:hover ol{
     margin:auto;
     padding-left: 15px;
 }
-
-.icon .background{
-    width: 400px;
-    height: 1000px;
-    background-color: rgb(250, 250, 250);
-    position: absolute;
-    right: -20px;
-    top: 63px;
-    display:none;
-}
-.icon .shopping:hover .background{
-    display: block;
-}
