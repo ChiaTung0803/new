@@ -84,15 +84,3 @@ footer .footer02:hover{
     background-color: white;
     color: rgb(179, 134, 86);
 }
-.icon .background{
-    width: 400px;
-    height: 1000px;
-    background-color: rgb(250, 250, 250);
-    position: absolute;
-    right: -20px;
-    top: 63px;
-    display:none;
-}
-.icon .shopping:hover .background{
-    display: block;
-}
