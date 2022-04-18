@@ -23,8 +23,7 @@
 .login_out a{
     border: 2px solid rgba(110, 108, 108, 0.769);
     font-size: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 5px 70px;
     color: black;
 }
 .login_out a:first-child{
@@ -38,17 +37,17 @@
     font-weight: bold;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .login ul li{
     border: 2px solid rgba(110, 108, 108, 0.769);
     font-size: 20px;
     width: 400px;
-    line-height: 1.5;
+    line-height: 2;
     margin-left: 170px;
 }
 .login ul li:first-child{
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 .login ul li input{
     border: none;

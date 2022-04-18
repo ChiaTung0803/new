@@ -7,26 +7,35 @@
     display: inline-flex;
 }
 .buy_left img{
-    width: 405px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 .buy_left{
-    margin-left: 150px;
+    margin-left: 200px;
     margin-top: 70px;
 }
 .buy_left .buy_donw img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-top: 10px;
 }
+.buy_left .buy_donw{
+    margin-left: 1px;
+}
+.buy_left .buy_donw .fa-caret-left{
+    font-size: 30px;
+}
+.buy_left .buy_donw .fa-caret-right{
+    font-size: 30px;
+}
 .buy_right{
-    margin-top: 130px;
+    margin-top: 120px;
     margin-left: 130px;
     text-align: center;
 }
 .buy_right h1{
     font-size: 38px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: rgb(135, 113, 90);
     font-weight: bold;
 }
@@ -46,11 +55,25 @@
     font-size: 28px;
     font-weight: bold;
     color: rgb(135, 113, 90);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+.buy_right .quantity p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.buy_right .quantity .custom{
+    font-size: 20px;
+    width: 50px;
+    margin-bottom: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid rgb(135, 113, 90);
 }
 .buy_right button{
     border: none;
     font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2;
     font-weight: bold;
     color: rgb(135, 113, 90);
 }
