@@ -1,0 +1,60 @@
+@import url('reset.css');
+@import url('header.css');
+@import url('footer.css');
+
+
+.buy{
+    display: inline-flex;
+}
+.buy_left img{
+    width: 405px;
+    height: 400px;
+}
+.buy_left{
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.buy_left .buy_donw img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+.buy_right{
+    margin-top: 130px;
+    margin-left: 130px;
+    text-align: center;
+}
+.buy_right h1{
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: rgb(135, 113, 90);
+    font-weight: bold;
+}
+.buy_right h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(152, 128, 102);
+}
+.buy_right h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(152, 128, 102);
+    margin-bottom: 30px;
+}
+.buy_right p{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(135, 113, 90);
+    margin-bottom: 50px;
+}
+.buy_right button{
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(135, 113, 90);
+}
+.buy_right button:hover{
+    background-color: rgb(135, 113, 90);
+    color: whitesmoke;
+}
