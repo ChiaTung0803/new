@@ -63,7 +63,8 @@
 }
 .buy_right .quantity .custom{
     font-size: 20px;
-    width: 50px;
+    width: 60px;
+    height: 30px;
     margin-bottom: 30px;
     outline: none;
     border-radius: 5px;
