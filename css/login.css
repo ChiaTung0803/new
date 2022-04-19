@@ -84,3 +84,13 @@
 .community .fa-line{
     color: green;
 }
+.icon .background p{
+    font-size: 20px;
+    color: dimgray;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70%;
+}
+.icon .shopping:hover .background{
+    display: block;
+}
