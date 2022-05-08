@@ -3,15 +3,14 @@
 @import url('../css/footer.css');
 
 
-
 .login a{
     text-decoration: none;
 }
 .login{
     width: 700px;
-    height: 500px;
-    margin-left: 250px;
-    margin-top: 40px;
+    height: 520px;
+    margin: 10px auto;
+    margin-top: 30px;
 }
 .login_out{
     width: 700px;
@@ -51,6 +50,7 @@
 }
 .login ul li input{
     border: none;
+    outline-style:none;
     font-size: 20px;
 }
 .login button.GO{

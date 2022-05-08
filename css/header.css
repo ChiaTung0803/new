@@ -1,7 +1,12 @@
 /*----------------header-------------------*/
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
 header{
+    width: 1265px;
     height: 90px;
+    margin:0 auto;
     align-items: center;
     display: flex;
     background-color: rgba(100%,100%,100%,0.8);
@@ -19,7 +24,7 @@ header img{
     margin-top: 5px;
 }
 /*----------------主選單-------------------*/
-header ul{
+header .oneone{
     display: flex;
     list-style: none;
     width: 700px;
@@ -51,7 +56,7 @@ header li a:hover{
     border-radius: 3px;
 }
 /*-------------子選單--------------*/
-header ol{
+header .oneone .header_ol{
     width: 140px;
     display: none;
     position: absolute;
@@ -69,13 +74,13 @@ header ol li a{
     margin-left: 5px;
 }
 
-ul li:hover ol{
+.oneone li:hover ol{
     display: block;
 }
 /*--------------右方連結--------------*/
 .icon{
   position: absolute;
-  left: 1140px;
+  right: 10px;
 }
     
 .icon img{
@@ -101,6 +106,50 @@ ul li:hover ol{
     text-align: center;
     margin-top: 70%;
 }
-.icon .shopping:hover .background{
-    display: block;
+/*--------------滿版圖---------------*/
+.content img{
+    width: 100%;
+}
+.sliderBoard{		
+	width: 1265px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.sliderBoard .content li{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 500px;
+}
+.sliderBoard .content h1{
+    font-size: 68px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+
+    opacity: 0;
+    animation: new 1s  ease forwards;
+}
+@keyframes new{
+	0%{ transform:translatey(-200px); opacity: 0;}
+	100%{ transform: translatey(0px); opacity: 1;}
+}
+.sliderBoard .content h2{
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    opacity: 0;
+    animation: two 1s ease forwards;
+}
+@keyframes two{
+	0%{ transform:translatey(-200px); opacity: 0;}
+	100%{ transform: translatey(10px); opacity: 1;}
+}
+mark{
+    width: 100%;
 }

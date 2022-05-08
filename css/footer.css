@@ -1,14 +1,11 @@
 
 /*-------------------footer--------------------*/
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 1265px;
-    margin: 0 auto;
-}
 footer{
     margin-top: 50px;
     background-color: rgb(179, 134, 86);
+    width: 1265px;
     height: 150px;
+    margin:0 auto;
     align-items: center;
     display:flex;
 
@@ -83,4 +80,11 @@ footer .footer01:hover{
 footer .footer02:hover{
     background-color: white;
     color: rgb(179, 134, 86);
+}
+/*-------------class:width------------------*/
+.width{
+    width: 1265px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
 }

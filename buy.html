@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blank Space</title>
     <link rel="stylesheet" href="./css/buy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./css/phone.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 <body>
     <header>
         <a href="./index.html"><img src="img/logo bs.png" alt=""></a>
-        <ul>
-            <li><a href="./index.html">首頁</a></li>
+        <ul class="oneone">
+            <li class="new"><a href="./index.html">首頁</a></li>
             <li><a href="./NewArrival.html">火熱新品</a></li>
             <li><a href="./mystyle.html">風格企劃</a>
-                <ol>
+                <ol class="header_ol">
                     <li><a href="./arrival_one.html">溫暖日系風</a></li>
                     <li><a href="./arrival_two.html">韓國ins風</a></li>
                     <li><a href="./arrival_three.html">簡約無印風</a></li>
@@ -23,48 +27,73 @@
             </li>
             <li><a href="./all.html">所有商品</a></li>
         </ul>
-
         <section class="icon">
             <a href="./login.html"><img src="img/circle-user-regular.svg" alt=""></a>
-            <a href="#" class="shopping"><img src="img/cart-shopping-solid.svg" alt="">
-                <div class="background">
+            <a href="#" class="shopping" id="shopping_icon"><img src="img/cart-shopping-solid.svg" alt="">
+                <div class="background" id="tt">
                     <p>你的購物車是空的</p>
                 </div>
             </a>
         </section>
+        <a class="hamBar" href="#" id="h_fa"><i class="fas fa-bars"></i></a>  
     </header>
-    <section class="buy">
-        <div class="buy_left">
-            <img src="./img/800xttt102.webp" alt="">
-            <ul class="buy_donw">
-                <i class="fa-solid fa-caret-left"></i>
-                <img src="./img/2000x.webp" alt="">
-                <img src="./img/200xttt03.webp" alt="">
-                <i class="fa-solid fa-caret-right"></i>
-            </ul>
-        </div>
-        <div class="buy_right">
-            <h1>純色棉麻抱枕套</h1>
-            <h2>全店，消費滿899，即享超取免運優惠</h2>
-            <h3>全店，消費滿2000，即享宅配免運優惠</h3>
-            <p>NT$ 400</p>
-            <div class="quantity">
-            <p>購買數量</p>
-            <select class="custom">
-                <option> 1 </option>
-                <option> 2 </option>
-                <option> 3 </option>
-                <option> 4</option>
-                <option> 5</option>
-                <option> 6</option>
-                <option> 7</option>
-                <option> 8</option>
-                <option> 9</option>
-                <option> 10</option>
-            </select>
+    <!--------------------- phone-hamgar ----------------------->
+    <section class="phone_header" id="h_text">
+        <ul>
+            <li><a href="./all.html">所有商品</a></li>
+            <li><a href="./NewArrival.html">火熱新品</a></li>
+            <li><a href="./mystyle.html">風格企劃</a>
+                <i class="fa-solid fa-caret-down" id="ol_style"></i>
+                <ol class="ol_kid">
+                    <a href="./arrival_one.html">溫暖日系風</a>
+                    <a href="./arrival_two.html">韓國ins風</a>
+                    <a href="./arrival_three.html">簡約無印風</a>
+                </ol>
+                
+            </li>
+            <li><a href="./login.html">會員登入</a></li>
+            <li><a href="./register.html">新用戶註冊</a></li>
+            <li><a href="">聯絡我們</a></li>
+        </ul>
+    </section>
+
+    <section class="buy_oud">
+        <section class="buy">
+            <div class="buy_left">
+                <img src="./img/buy1.png" alt="">
+                <ul class="buy_donw">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="./img/buy2.png" alt="">
+                    <img src="./img/buy3.png" alt="">
+                    <i class="fa-solid fa-caret-right"></i>
+                </ul>
             </div>
-            <button>加入購物車</button>
-        </div>
+            <div class="buy_right">
+                <h1>純色棉麻抱枕套</h1>
+                <h2>全店，消費滿899，即享超取免運優惠</h2>
+                <h3>全店，消費滿2000，即享宅配免運優惠</h3>
+                <p>NT$ 400</p>
+                <div class="quantity">
+                <p>購買數量</p>
+                <select class="custom">
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4</option>
+                    <option> 5</option>
+                    <option> 6</option>
+                    <option> 7</option>
+                    <option> 8</option>
+                    <option> 9</option>
+                    <option> 10</option>
+                </select>
+                </div>
+                <button>加入購物車</button>
+            </div>
+        </section>
+        <section class="buy_img">
+            <img src="./img/under.hot/buy8.png">
+        </section>
     </section>
     <footer>
         <a href="#" class="mm">
@@ -81,6 +110,6 @@
         <a href="#" class="footer02">購物須知</a>
         </div>
     </footer>
-
+    <script src="./js/icon.js"></script>
 </body>
 </html>

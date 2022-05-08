@@ -1,13 +1,12 @@
 @import url('reset.css');
 @import url('header.css');
 @import url('footer.css');
+@import url('phone.css');
 
-/*--------------滿版圖---------------*/
-.top img{
-    width: 100%;
-    display: block;
+.mid{
+    width: 1265px;
+    margin:0 auto;
 }
-
 .mid h1{
     border: 8px solid rgb(152, 128, 102);
     border-left: 40px solid rgb(152, 128, 102);
@@ -88,7 +87,7 @@
     top: 500px;
     right: 10px;
 }
-.mid ul li a:hover{
+.mid ul li:hover a{
     background-color:rgb(179, 134, 86);
     color: white;
     font-size: 30px;
@@ -108,7 +107,10 @@
 }
 /*-----------居家風格商品背景------------*/
 .commodity{
+    width: 1265px;
     height: 475px;
+    margin:0 auto;
+    text-align: center;
 }
 .commodity ul{
     margin-top: 20px;
@@ -125,9 +127,17 @@
     display: inline-block;
     background-color: whitesmoke;
     width: 300px;
-    height: 400px;
+    height: 360px;
     margin-left: 16px;
 
+    position: relative;
+}
+.commodity ul li ol{
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
     position: relative;
 }
 .commodity .more{
@@ -137,44 +147,32 @@
     background-color: rgb(179, 134, 86);
     line-height: 40px;
     padding: 0 10px;
-    margin-left: 580px;
     color: white;
-    
 }
 .commodity .more:hover{
     background-color: rgb(101, 186, 101);
     color: white;
     border-radius: 5px;
 }
-.commodity li:hover{
-    background-color:rgb(152, 128, 102) ;
-}
 /*-----------商品文字圖片------------*/
-.commodity h2{
+.commodity li h2{
+    background-color: whitesmoke;
     font-weight: bold;
     font-size: 22px;
+    line-height: 60px;
     color: rgb(152, 128, 102);
-    margin-bottom: 22px;
-    margin-top: 20px;
-    text-align: center;
 }
-.commodity ul li ol{
-    width: 300px;
-    height: 300px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.commodity li ol a{
-    font-size: 24px;
+.commodity ol a{
     text-decoration: none;
+    color: rgb(179, 134, 86);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
     font-weight: bold;
-    color: rgb(152, 128, 102);
-    background-color: white;
-    line-height: 3.5;
-    padding: 0 98px;
-    opacity: 0.9;
+    width: 300px;
+    height: 60px;
+    line-height: 2.5;
     display: none;
-   
+    
     position: absolute;
     bottom: 0;
     left: 0;
@@ -184,35 +182,44 @@
 .commodity li:hover a{
     display: block;
 }
-.commodity li:hover h2{
-    color: whitesmoke;
-}
 /*-----------商品圖------------*/
-.commodity li .ttt{
-    background-image: url(../img/2000x.webp);
+.commodity .back{
+    width: 300px;
+    height: 600px;
 }
-.commodity li .ttt:hover{
-    background-image: url(../img/800xttt102.webp);
+.commodity .top .back{
+    background-image: url(../img/ttt-1.png);
 }
-.commodity li .ttt2{
-    background-image: url(../img/800xttt2.webp);
+.commodity .top:hover .back{
+    position: absolute;
+    bottom:1px;
 }
-.commodity li .ttt2:hover{
-    background-image: url(../img/200xttt202.webp);
+.commodity .top2 .back{
+    background-image: url(../img/top2-1.png);
 }
-.commodity li .ttt3{
-    background-image: url(../img/800xttt3.webp);
+.commodity .top2:hover .back{
+    position: absolute;
+    bottom:1px;
 }
-.commodity li .ttt3:hover{
-    background-image: url(../img/800xttt302.webp);
+.commodity .top3 .back{
+    background-image: url(../img/top3-1.png);
 }
-.commodity li .ttt4{
-    background-image: url(../img/800xttt4.webp);
+.commodity .top3:hover .back{
+    position: absolute;
+    bottom: 0;
 }
-.commodity li .ttt4:hover{
-    background-image: url(../img/800xttt402.webp);
+.commodity .top4 .back{
+    background-image: url(../img/top4-1.png);
+}
+.commodity .top4:hover .back{
+    position: absolute;
+    bottom: 0;
 }
 /*---------------熱門商品精選文字---------------*/
+.text{
+    width: 1265px;
+    margin:0 auto;
+}
 .text h1{
     border: 8px solid rgb(152, 128, 102);
     border-left: 40px solid rgb(152, 128, 102);
@@ -222,9 +229,16 @@
     line-height: 80px;
     color: rgb(152, 128, 102);
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
 }
 /*---------------熱門商品基本架構---------------*/
+.under{
+    width: 1265px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
 .under ul{
     text-align: center;
     padding-left: 90px;
@@ -232,13 +246,11 @@
 }
 .under li{
     width: 300px;
-    height: 400px;
+    height: 360px;
     background-color: whitesmoke;
     display: inline-block;
-
     margin-left: 15px;
     margin-bottom: 15px;
-    position: relative;
 }
 .under li h2{
     background-color: whitesmoke;
@@ -252,6 +264,8 @@
     height: 300px;
     background-size: contain;
     background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
 }
 .under li ol a{
     text-decoration: none;
@@ -271,47 +285,55 @@
     margin: auto;
 }
 /*---------------熱門商品 HOVER的部分---------------*/
-.under li:hover h2{
-    background-color: rgb(152, 128, 102);
-    color: white;
-}
 .under li:hover a{
     display: block;
 }
 /*---------------熱門商品圖片---------------*/
-.under .hot{
-    background-image: url(../img/under.hot/hot1.png);
+.under .back{
+    width: 300px;
+    height: 600px;
 }
-.under .hot:hover{
-    background-image: url(../img/under.hot/hot1_02.png);
+.under .hot .back{
+    background-image:url(../img/under.hot/hot1-1.png);
 }
-.under .hot2{
-    background-image: url(../img/under.hot/hot2_02.png);
+.under .hot:hover .back{
+    position: absolute;
+    bottom:1px;
 }
-.under .hot2:hover{
-    background-image: url(../img/under.hot/hot2.png);
+.under .hot2 .back{
+    background-image: url(../img/under.hot/hot2-1.png);
 }
-.under .hot3{
-    background-image: url(../img/under.hot/hot3.png);
+.under .hot2:hover .back{
+    position: absolute;
+    bottom:1px;
 }
-.under .hot3:hover{
-    background-image: url(../img/under.hot/hot3_2.png);
+.under .hot3 .back{
+    background-image: url(../img/under.hot/hot3-1.png);
 }
-.under .hot4{
-    background-image: url(../img/under.hot/hot4.png);
+.under .hot3:hover .back{
+    position: absolute;
+    bottom:1px;
 }
-.under .hot4:hover{
-    background-image: url(../img/under.hot/hot4_1.png);
+.under .hot4 .back{
+    background-image: url(../img/under.hot/hot4-1.png);
 }
-.under .hot5{
-    background-image: url(../img/under.hot/hot5.png);
+.under .hot4:hover .back{
+    position: absolute;
+    bottom:1px;
 }
-.under .hot5:hover{
-    background-image: url(../img/under.hot/hot5_1.png);
+.under .hot5 .back{
+    background-image: url(../img/under.hot/hot5-1.png);
 }
-.under .hot6{
-    background-image: url(../img/under.hot/hot6.png);
+.under .hot5:hover .back{
+    position: absolute;
+    bottom:1px;
 }
-.under .hot6:hover{
-    background-image: url(../img/under.hot/hot6_01.png);
+.under .hot6 .back{
+    background-image: url(../img/under.hot/hot6-11.png);
 }
+.under .hot6:hover .back{
+    position: absolute;
+    bottom:1px;
+}
+
+

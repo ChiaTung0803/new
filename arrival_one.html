@@ -4,50 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blank Space</title>
     <link rel="stylesheet" href="./css/arrival_one.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./css/phone.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <header>
         <a href="./index.html"><img src="img/logo bs.png" alt=""></a>
-        <ul>
-            <li><a href="./login.html">首頁</a></li>
+        <ul class="oneone">
+            <li><a href="./index.html">首頁</a></li>
             <li><a href="./NewArrival.html">火熱新品</a></li>
-            <li class="new"><a href="./mystyle.html">風格企劃</a>
-                <ol>
-                    <li><a href="./arrival_one.html">溫暖日系風</a></li>
+            <li><a href="./mystyle.html">風格企劃</a>
+                <ol class="header_ol">
+                    <li class="new"><a href="./arrival_one.html">溫暖日系風</a></li>
                     <li><a href="./arrival_two.html">韓國ins風</a></li>
                     <li><a href="./arrival_three.html">簡約無印風</a></li>
                 </ol>
             </li>
             <li><a href="./all.html">所有商品</a></li>
-                
         </ul>
-
         <section class="icon">
             <a href="./login.html"><img src="img/circle-user-regular.svg" alt=""></a>
-            <a href="#" class="shopping"><img src="img/cart-shopping-solid.svg" alt="">
-                <div class="background">
+            <a href="#" class="shopping" id="shopping_icon"><img src="img/cart-shopping-solid.svg" alt="">
+                <div class="background" id="tt">
                     <p>你的購物車是空的</p>
                 </div>
             </a>
         </section>
+        <a class="hamBar" href="#" id="h_fa"><i class="fas fa-bars"></i></a>  
     </header>
-
-    <section class="top">
-        <a href="./NewArrival.html"><img src="img/滿版圖01.gif" alt=""></a>
+    <!--------------------- phone-hamgar ----------------------->
+    <section class="phone_header" id="h_text">
+        <ul>
+            <li><a href="./all.html">所有商品</a></li>
+            <li><a href="./NewArrival.html">火熱新品</a></li>
+            <li><a href="./mystyle.html">風格企劃</a>
+                <i class="fa-solid fa-caret-down" id="ol_style"></i>
+                <ol class="ol_kid">
+                    <a href="./arrival_one.html">溫暖日系風</a>
+                    <a href="./arrival_two.html">韓國ins風</a>
+                    <a href="./arrival_three.html">簡約無印風</a>
+                </ol>
+                
+            </li>
+            <li><a href="./login.html">會員登入</a></li>
+            <li><a href="./register.html">新用戶註冊</a></li>
+            <li><a href="">聯絡我們</a></li>
+        </ul>
     </section>
 
+
+    <div class="sliderBoard">
+		<ul class="content">
+			<img src="./img/img0001.png" alt="">
+            <li>
+                <h1>2022火熱新品</h1>
+                <h2>2022/05/09至2022/06/30</h2>
+            </li>
+		</ul>
+	</div>
     
+    <section class="width">
     <!--------------左邊引導列--------------->
     <mark>
         <a href="./index.html">首頁</a><p>></p><a href="./mystyle.html">風格企劃</a>><a href="./arrival_one.html">溫暖日系風</a>
     </mark>
 
     <section class="ow">
-    <nav>
+    <nav id="nav_id">
         <ul>
             <li><a href="./index.html">首頁</a></li>
             <li><a href="./NewArrival.html">火熱新品</a></li>
@@ -62,40 +91,45 @@
     <!--------------右側商品--------------->
     <section class="commodity">
         <ul >
-          <li>
-              <h2>純色棉麻抱枕套</h2>
-              <ol class="ttt">
-                  <a href="./buy.html">前往選購</a>
-              </ol>
-          </li>
-          <li>
-              <h2>小熊毛絨地毯</h2>
-              <ol class="ttt2">
-                  <a href="">前往選購</a>
-              </ol>
-          </li>
-          <li>
-              <h2>法式立體雛菊毛絨蓋毯</h2>
-              <ol class="ttt3">
-                  <a href="">前往選購</a>
-              </ol>
-          </li>
-          <li>
-              <h2>松木雙門收納櫃</h2>
-              <ol class="ttt4">
-                  <a href="">前往選購</a>
-              </ol>
-          </li>
-          <li>
-            <h2>藤編復古百褶燈</h2>
-            <ol class="ttt5">
-                <a href="">前往選購</a>
-            </ol>
-        </li>
-        </ul>
+            <li>
+                <h2>純色棉麻抱枕套</h2>
+                <ol class="hot">
+                    <div class="back"></div>
+                    <a href="">前往選購</a>
+                </ol>
+            </li>
+            <li>
+                <h2>純色床包(芝麻灰)</h2>
+                <ol class="hot2">
+                    <div class="back"></div>
+                    <a href="">前往選購</a>
+                </ol>
+            </li>
+            <li>
+                <h2>素色粗針織流蘇沙發毯</h2>
+                <ol class="hot3">
+                    <div class="back"></div>
+                    <a href="">前往選購</a>
+                </ol>
+            </li>
+            <li>
+                <h2>松木雙門收納櫃</h2>
+                <ol class="hot4">
+                    <div class="back"></div>
+                    <a href="">前往選購</a>
+                </ol>
+            </li>
+            <li>
+                <h2>法式立體雛菊毛絨蓋毯</h2>
+                <ol class="hot5">
+                    <div class="back"></div>
+                    <a href="">前往選購</a>
+                </ol>
+            </li>
+          </ul>
       </section>
     </section>
-
+  </section>
     <footer>
         <a href="#" class="mm">
             <i class="fa-brands fa-instagram"></i>
@@ -111,5 +145,6 @@
         <a href="#" class="footer02">購物須知</a>
         </div>
     </footer>
+    <script src="./js/icon.js"></script>
 </body>
 </html>
