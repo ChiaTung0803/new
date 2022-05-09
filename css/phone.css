@@ -92,9 +92,15 @@
     footer .me{
       display: none;
     }
+    .buy_out{
+      width: 100%;
+    }
   }
   /*-------------平板寬度-------------*/
   @media screen and (max-width:768px){
+    .width{
+      width: 100%;
+    }
     header{
       width: 100%;
       height: 70px;
@@ -337,6 +343,29 @@
     .commodity ul li ol a{
       display: block;
     }
+    .buy{
+      width: 726px;
+      display: block;
+    }
+    .buy_left{
+      width: 700px;
+      margin-left: 0;
+      text-align: center;
+    }
+    .buy_donw{
+      display: none;
+    }
+    .buy_right{
+      width: 100%;
+      margin-left: 0;
+    }
+    .buy_img{
+      width: 700px;
+    }
+    .buy_img img{
+      width: 100%;
+      margin-left: 10px;
+    }
 }
   /*_________________手機板寬度_________________________*/
   @media screen and (max-width:428px){
@@ -567,5 +596,31 @@
     }
     #size{
       margin-top: 0;
+    }
+    .buy_out{
+      width: 100%;
+    }
+    .buy{
+      display: block;
+    }
+    .buy_left{
+      width: 400px;
+      margin: 0;
+    }
+    .buy_donw{
+      display: none;
+    }
+    .buy_right{
+      width: 400px;
+      margin-left: 0;
+    }
+    .buy_img{
+      width: 100%;
+    }
+    .buy_img .buy_imgul{
+      width: 400px;
+    }
+    .buy_img img{
+      width: 100%;
     }
   }

@@ -7,6 +7,7 @@
     margin: 0 auto;
 }
 .buy{
+    width: 100%;
     display: inline-flex;
 }
 .buy_left img{
@@ -107,9 +108,14 @@
     right: -20px;
 }
 .buy_img{
+    width: 1265px;
+    /* text-align: center; */
+}
+.buy_img .buy_imgul{
     width: 100%;
     text-align: center;
 }
+
 .buy_img img{
     width: 600px;
 }
